@@ -9,7 +9,7 @@ def solution(land):
     for i in range(len(land)):
         b[i] = sorted(b[i], key=lambda x: x[1])
         #land[i] = sorted(land[i], key= lambda x: x[1], reverse=True)
-    for i in range(1,len(land)-1):
+    #for i in range(1,len(land)-1):
        # if b[i-1][0][0] == b[i][0][0] == b[i+1][0][0]:
         
 
