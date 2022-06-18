@@ -29,7 +29,7 @@ def dfs(numbers, now, answer, met): #모든 경우의 수를 answer에 추가한
     if len(now) != 0:
         answer.append(now[:])
     if len(now) == len(numbers):
-        return 
+        return now
     for i in range(len(numbers)):
         if met[i] == False:
             met[i] = True
