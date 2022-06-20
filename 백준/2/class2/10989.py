@@ -1,11 +1,15 @@
 #2시30분 
-n = int(input())
-dic = {i : 0 for i in range(1, 10001)}
-for i in range(n):
-    a = int(input())
-    dic[a] += 1
+import time, random
+start = time.time()
+N = 1000000
 
-#print('\n\n\n')
-for i in range(1,10001):
-    for j in range(dic[i]):
-        print(i)
+N_list = [0] * 10001
+
+for _ in range(N):
+    data = random.randint(1, 10000)
+    N_list[data] += 1
+
+for i in range(10001):
+    if N_list[i] != 0:
+        for j in range(N_list[i]):
+            print(i)

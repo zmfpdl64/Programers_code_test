@@ -15,4 +15,6 @@
 #     print(answer[j])
    
 
-print(2/3)
+b = {"a" : [], "b" : []}
+b["a"].append([])
+print(b)
