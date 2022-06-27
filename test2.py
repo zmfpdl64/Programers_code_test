@@ -15,6 +15,18 @@
 #     print(answer[j])
    
 
-b = {"a" : [], "b" : []}
-b["a"].append([])
-print(b)
+
+
+# a = [1,2,3,4,5]
+# b = [1,1,2,2,3,3,4,4,5,5]
+# a_copy = a.copy()
+# for i in b:
+#     if i in a_copy:
+#         a_copy.remove(i)
+
+# ANB = len(a) - len(a_copy)
+# AUB = len(a) + len(b) - ANB
+# print(ANB/ AUB)
+a = [1,2,3]
+b = [4,5,6]
+print(a.pop(3))
