@@ -27,6 +27,11 @@
 # ANB = len(a) - len(a_copy)
 # AUB = len(a) + len(b) - ANB
 # print(ANB/ AUB)
-a = [1,2,3]
-b = [4,5,6]
-print(a.pop(3))
+a= [[1,2],[3,4],[5,6]]
+b = []
+#for i in a:
+#    b.append(max(i))
+#print(b)
+c = [1,2,3,4]
+c += 5,6,7,8
+print(c)
