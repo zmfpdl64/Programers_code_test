@@ -15,18 +15,18 @@ n, m, b = map(int, input().split()) # 세로, 가로, 보유 불럭
 a = []  # 지도 배열
 for i in range(n):
     a += map(int, input().split())
-aveg = int((sum(a)+ b) / len(a))
-mini = 10000000
+aveg = int((sum(a)+ b) / (n*m))
+mini = 100000000
 height = 0
 for i in range(aveg+1): #최대 높이부터 0까지
     temp = 0
-    for j in range(n*m):    #보드 높이 계산
-        dif = i - a[j]
+    for j in a:    #보드 높이 계산
+        dif = i - j
         if dif >= 0:
             temp += dif
         else:
             temp += abs(dif)*2
-    if  mini > temp:
+    if  mini >= temp:   #크거나 같다 표시를 해야하는데 크다 표시를 해서 통과되지 않았다.
         mini = temp
         height = i
 print(mini, height)
