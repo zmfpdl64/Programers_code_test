@@ -1,4 +1,4 @@
-#17시 56분
+#17시 56분 17tl 58분
 
 from math import factorial as fa
 
