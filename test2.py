@@ -40,5 +40,18 @@
 # a += 6,7
 # print(a)
 
-a = "1234"
-print(a.isdigit())
+# a = "1234"
+# print(a.isdigit())
+
+# a, b = "noj.am".split()
+# print(a)
+
+n = 10
+a = 10
+def s(n):
+    n += 10
+    if n == 100:
+        return n
+    else:
+        return s(n)
+    

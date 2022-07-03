@@ -30,7 +30,7 @@ def solution(numbers, target):
         for op, num in zip(i, numbers):
             val += num if op == '+' else -num
         answer += (val == target)
-
+    print(answer)
     return answer
 
 #
