@@ -46,12 +46,12 @@
 # a, b = "noj.am".split()
 # print(a)
 
-n = 10
-a = 10
-def s(n):
-    n += 10
-    if n == 100:
-        return n
-    else:
-        return s(n)
-    
+import itertools as it
+
+a= [[1,0], [0,1]]*2
+result = list(it.permutations(a,1))
+
+# print(a)
+for i in result:
+    print(i)
+print(len(result))

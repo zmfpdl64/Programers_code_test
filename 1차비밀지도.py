@@ -1,6 +1,6 @@
 def solution(n, arr1, arr2):
     answer = []
-    
+    size = n
     for i, v in enumerate(arr1):
         arr1[i] = bin(arr1[i])
         arr1[i] = list(arr1[i][2:])
@@ -22,6 +22,7 @@ def solution(n, arr1, arr2):
                 d += ' '
         answer.append(d)
         d = ''
+    print(answer)
     return answer
 
 
