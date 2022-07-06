@@ -21,7 +21,6 @@ for i in range(1, a+1):
     matrix[i][2] = max(matrix[i-1][1], matrix[i-1][0])  
     matrix[i][1] = matrix[i-1][2] + stair[i-1]          
     matrix[i][0] = matrix[i-1][1] + stair[i-1]
-    print(matrix[i])
 
 print(max(matrix[i][1], matrix[i][0]))
 
