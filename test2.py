@@ -46,12 +46,19 @@
 # a, b = "noj.am".split()
 # print(a)
 
-import itertools as it
+# import itertools as it
 
-a= [[1,0], [0,1]]*2
-result = list(it.permutations(a,1))
+# a= [[1,0], [0,1]]*2
+# result = list(it.permutations(a,1))
 
-# print(a)
-for i in result:
-    print(i)
-print(len(result))
+# # print(a)
+# for i in result:
+#     print(i)
+# print(len(result))
+
+# import sys
+# s=lambda:map(int,sys.stdin.readline().split())
+# n,m=s()
+# a=[0]
+# for i in s(): a+=[a[-1]+i]
+# for i in range(m): x,y=s(); print(a[y]-a[x-1])

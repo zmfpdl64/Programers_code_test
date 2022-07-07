@@ -1,7 +1,4 @@
 #1시 42분
-import itertools
-a = []
-answer = []
 for i in range(int(input())):
     
     n = int(input())
@@ -21,19 +18,4 @@ for i in range(int(input())):
     for i in values:
         s = s*(i+1)
     print(s-1)
-    # for i in range(2, len(values)+1):
-    #    result = list(itertools.combinations(values,i))
-    #    for j in result:
-    #     c = 1
-    #     for k in j:
-    #         c *= k
-    #     sum1 += c
-    # print(sum1)
-
-    # for i in result:
-    #     for j in i:
-    #         c = 1
-    #         for k in j:
-    #             c *= k
-    #         answer.append(c)
-    #         sum1 += c
+ 
