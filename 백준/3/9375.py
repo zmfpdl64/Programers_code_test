@@ -26,10 +26,13 @@ for i in range(int(input())):
         sum1 = 0
         for j in range(len(result[i])):
             sum2 =0
-            for k in range(len(result[i][j])):
-                sum2 += result[i][j][k]
+            if type(result[i][j]) == int:
+                sum1 += result[i][j]
+            else:
+                for k in range(len(result[i][j])):
+                    sum2 += result[i][j][k]
             
-            sum1 += sum2
+                sum1 += sum2
         sum0 += sum1
                 
     print(sum0)
