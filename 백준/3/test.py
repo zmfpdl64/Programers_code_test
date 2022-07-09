@@ -1,11 +1,7 @@
+a = [[False]*3 for _ in range(3)]    #행이 복사가 되서 하나의 행의 요소를 변경하면 모든 행의 수정된다.
 
-n = 5
-graph = [[] for _ in range(n+1)]
-b = [[]]
-for i in range(len(graph)):
-    for j in range(n):
-        graph[i].append(j)
-print(graph)
-print(len(graph))
-print(len(graph[0]))
-print(b)
+for i in a:
+    print(i)
+a[1][1] = True
+for i in a:
+    print(i)
