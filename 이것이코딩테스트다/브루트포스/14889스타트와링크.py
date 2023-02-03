@@ -2,14 +2,15 @@ import sys
 def dfs(depth, idx):
     global graph, vi_map, min_value,n
     if depth == n//2:
+        print(vi_map)
         asum = 0
         bsum = 0
         for i in range(n):
-            for j in range(n):
+            for j in range(i, n):
                 if vi_map[i] and vi_map[j]:
-                    asum += graph[i][j]
+                    asum += graph[i][j] + graph[j][i]
                 elif not vi_map[i] and not vi_map[j]:
-                    bsum += graph[i][j]
+                    bsum += graph[i][j] + graph[j][i]
         min_value = min(min_value, abs(asum - bsum))
         return
     for i in range(idx, n):
