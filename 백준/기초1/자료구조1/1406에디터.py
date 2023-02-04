@@ -6,6 +6,7 @@ left = list(input().rstrip())
 right = []
 n = int(input())
 idx = len(left)
+strlist = []
 for i in range(n):
     com = list(input().split())
     if len(com) == 2:
