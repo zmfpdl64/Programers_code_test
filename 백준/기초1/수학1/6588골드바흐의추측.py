@@ -1,22 +1,22 @@
-#5시23분
-# 실1
+import sys
+input = sys.stdin.readline
 m = 1000001
-pr_map = [True] * m
-pr_map[0] = False
-sq = int(m**0.5)
-for i in range(2, sq):
-    if pr_map[i] == True:
-        for j in range(i+i, m, i):
-            pr_map[j] = False
-a = []
+p_map = [True] * m
+p_map[1], p_map[0] = False, False
+n = int(m**0.5)+1
+for i in range(2, n, 2):
+    if p_map[i]:
+        for j in range(i*2, m, i):
+            if p_map[j] == True:
+                p_map[j] = False
 while True:
-    b = int(input())
-    result = ''
-    if b == 0:
+    num = int(input())
+    if num == 0:
         break
-    for i in range(3, b//2+1):
-        if pr_map[i] and pr_map[b-i]:
-            result = f'{b} = {i} + {b-i}'
+    result = ''
+    for i in range(3, m, 2):
+        if p_map[i] and p_map[num-i]:
+            result = f'{num} = {i} + {num-i}'
             break
     if result:
         print(result)
