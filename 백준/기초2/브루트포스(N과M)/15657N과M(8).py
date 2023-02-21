@@ -1,5 +1,6 @@
-# 19시 20분 19시 24분
+# 19시 44분 19시 47분
 # 실3
+
 n, m = map(int, input().split())
 a = list(map(int, input().split()))
 a.sort()
@@ -9,9 +10,7 @@ def dfs(idx, depth):
         print(*answer)
         return
     for i in range(idx, n):
-        if a[i] not in answer:
-            answer.append(a[i])
-            dfs(i, depth+1)
-            answer.pop()
+        answer.append(a[i])
+        dfs(i, depth+1)
+        answer.pop()
 dfs(0, 0)
-e
