@@ -23,7 +23,10 @@ def solution(position, height, m):
         maxi.remove(max_v)
     print(dangers)
     print(maxi)
-    return max(maxi)
+    if len(maxi) == 0:
+        return 0
+    else:
+        return max(maxi)
 
 def dfs(maps, now, length):
     try:
@@ -36,6 +39,6 @@ def dfs(maps, now, length):
 # pos = [1,2,4,5,9,10]
 # dang = [2,2,2,5,2,2]
 
-# pos = [1,2,3,4]
-# dang = [3,1,1,1]
-# print(solution(pos, dang, 2))
+pos = [1,2,3,4]
+dang = [3,1,1,1]
+print(solution(pos, dang, 4))
