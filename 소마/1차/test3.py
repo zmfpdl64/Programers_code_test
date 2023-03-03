@@ -41,4 +41,4 @@ def dfs(maps, now, length):
 
 pos = [1,2,3,4]
 dang = [3,1,1,1]
-print(solution(pos, dang, 4))
+print(solution(pos, dang, 0))
