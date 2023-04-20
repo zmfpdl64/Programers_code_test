@@ -1,4 +1,4 @@
-# 22시 42분 23시 14분  32분
+# 22시 42분 23시 14분
 def minimum(answer, ans):
     if abs(answer[1]-answer[0]) >= abs(ans[1]-ans[0]):
         return True
