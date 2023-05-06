@@ -1,2 +1,2 @@
-a = dict()
-list = list
+a = {"a":1}
+print(len(a))
