@@ -17,5 +17,5 @@ def solution(n, info):
                 maxi = result
                 answer = [info[i]+1 if case[i] else 0 for i in range(len(case)) ]
                 answer[0] += n-arrow_c
-    return answer[::-1]ㅎ
+    return answer[::-1]
 
