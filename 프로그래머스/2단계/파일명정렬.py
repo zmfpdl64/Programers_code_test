@@ -99,7 +99,7 @@ def solution(files):
                 break
     # lists = my_sort(lists)
     lists = custom_sort(lists)
-    # lists.sort(key=lambda x: ((x[0].lower(), -int(x[1]), x[3])))
+    # lists.sort(key=lambda x: ((x[0].lower(), int(x[1]), x[3])))
 
     for i in lists:
         answer.append(''.join(i[:-1]))
