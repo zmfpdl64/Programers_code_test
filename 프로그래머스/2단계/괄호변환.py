@@ -37,5 +37,3 @@ def div_str(p):
                     s += dic[p[:c+1][j]]
                 return s
     return ''
-def solution(p):
-    return div_str(p)
