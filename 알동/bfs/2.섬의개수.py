@@ -3,10 +3,13 @@
 # https://www.acmicpc.net/problem/4963
 from collections import deque
 
+# 1 <= w, h <= 50
+
+# w * h * (1의 갯수)
 move = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[-1,-1],[1,-1],[-1,1]]
 
 while True:
-    n, m = map(int, input().split())
+    n, m = map(int, input().split()) # w, h
     if n == 0 and m == 0:
         break
     maps =[]

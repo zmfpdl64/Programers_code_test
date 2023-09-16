@@ -12,4 +12,5 @@ while queue:
         if 0 <= nex <= 100_000 and dp[nex] > t+1:
             dp[nex] = t+1
             heapq.heappush(queue, [t+1, nex])
+
 print(dp[m])

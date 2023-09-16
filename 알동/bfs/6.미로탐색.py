@@ -1,4 +1,4 @@
-# 2시 20분
+# 2시 20분 38분
 # 실1
 # https://www.acmicpc.net/problem/2178
 from collections import deque as d

@@ -1,6 +1,13 @@
 # 23시 28분 23시 50분 22분
 # 실버2
 # https://www.acmicpc.net/problem/24444
+
+# 5 <= n <= 100,000
+# 1 <= m <= 200,000
+
+# 1/2 * m(m-1)
+# n * 2 * 2
+
 from collections import deque as q
 n, m, r = map(int,input().split())
 gph = [[] for i in range(n+1)]
@@ -10,8 +17,11 @@ for i in range(m):
     u, v = map(int, input().split())
     gph[u].append(v)
     gph[v].append(u)
+
 for i in range(len(gph)):
     gph[i].sort()
+
+
 if not gph[r]:
     for i in range(n):
         print(0)
