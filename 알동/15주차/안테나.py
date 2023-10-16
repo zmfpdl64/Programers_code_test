@@ -6,10 +6,14 @@ import sys
 n = int(input())
 homes = list(map(int, input().split()))
 homes.sort()
+
+
 result = 0
 idx = len(homes) // 2
+
 if len(homes) % 2 == 0:
     result = homes[idx-1]
 else:
     result = homes[idx]
+
 print(result)
